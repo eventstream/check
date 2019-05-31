@@ -14,7 +14,7 @@ isEmail('qwerty@gmail.com') // true
 for React/Vue/Angular
 
 ```javascript
-import {isEmail} from '@eventstream/check'
+import { isEmail } from '@eventstream/check'
 
 isEmail('qwerty@gmail.com') // true
 ```
