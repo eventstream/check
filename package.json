@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "test": "jest --coverage",
+    "test": "jest && codecov",
     "build": "babel src --out-dir dist && yarn minify",
     "minify": "uglifyjs ./dist/index.js -c -m -o ./dist/index.min.js"
   },
@@ -29,6 +29,8 @@
     "uglify-js": "^3.6.0"
   },
   "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "verbose": true
   }
 }
