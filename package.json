@@ -2,6 +2,13 @@
   "name": "@eventstream/check",
   "version": "0.0.3",
   "description": "Library for checking email, url and other",
+  "keywords": [
+    "Email",
+    "URL",
+    "UUID",
+    "check",
+    "validation"
+  ],
   "main": "src/index.js",
   "repository": "https://github.com/eventstream/check.git",
   "author": "Anton Lukichev <anton@lukichev.pro>",
@@ -9,7 +16,7 @@
   "private": false,
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "test": "jest && codecov",
+    "test": "jest",
     "build": "babel src --out-dir dist && yarn minify",
     "minify": "uglifyjs ./dist/index.js -c -m -o ./dist/index.min.js"
   },
@@ -27,6 +34,10 @@
     "eslint-plugin-standard": "^4.0.0",
     "jest": "^24.8.0",
     "uglify-js": "^3.6.0"
+  },
+  "engines": {
+    "node": ">=8.x",
+    "npm": ">=6.x"
   },
   "jest": {
     "coverageDirectory": "./coverage/",

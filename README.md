@@ -1,3 +1,6 @@
+[![codecov](https://codecov.io/gh/eventstream/check/branch/master/graph/badge.svg)](https://codecov.io/gh/eventstream/check)
+[![Build Status](https://travis-ci.org/eventstream/check.svg?branch=master)](https://travis-ci.org/eventstream/check)
+
 # @eventstream/check
 Library for checking email, url and other
 
