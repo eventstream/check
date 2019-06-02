@@ -1,13 +1,15 @@
 {
   "name": "@eventstream/check",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Library for checking email, url and other",
   "keywords": [
     "Email",
     "URL",
     "UUID",
     "check",
-    "validation"
+    "validation",
+    "RFC5322",
+    "RFC6530"
   ],
   "main": "src/index.js",
   "repository": "https://github.com/eventstream/check.git",

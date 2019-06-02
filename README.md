@@ -4,7 +4,7 @@
 # @eventstream/check
 Library for checking email, url and other
 
-# Use
+# Use Email check
 
 for Node.js
 
@@ -21,3 +21,5 @@ import { isEmail } from '@eventstream/check'
 
 isEmail('qwerty@gmail.com') // true
 ```
+
+[Email address from Wikipedia](https://en.wikipedia.org/wiki/Email_address)
