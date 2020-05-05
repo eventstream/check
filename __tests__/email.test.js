@@ -1,9 +1,7 @@
 const isEmail = require('../src').isEmail
 
 describe('Test Email', () => {
-
   describe('Valid', () => {
-
     test('Email valid: qwerty@example.com', () => {
       expect(isEmail('qwerty@example.com')).toBe(true)
     })
@@ -35,11 +33,9 @@ describe('Test Email', () => {
     test('Printable characters', () => {
       expect(isEmail('!#$%&\'*+-/=?^_`.{|}~@example.com')).toBe(true)
     })
-
   })
 
   describe('Invalid', () => {
-
     test('no @ character', () => {
       expect(isEmail('qwerty.example.com')).not.toBe(true)
     })
@@ -69,11 +65,11 @@ describe('Test Email', () => {
     })
 
     test('spaces, quotes, and backslashes may only exist when within quoted strings and preceded by a backslash', () => {
-      expect(isEmail('this is"not\allowed@example.com')).not.toBe(true)
+      expect(isEmail('this is"notallowed@example.com')).not.toBe(true)
     })
 
     test('even if escaped (preceded by a backslash), spaces, quotes, and backslashes must still be contained by quotes', () => {
-      expect(isEmail('this\ still\"not\\allowed@example.com')).not.toBe(true)
+      expect(isEmail('this still"not allowed@example.com')).not.toBe(true)
     })
 
     test('local part is longer than 64 characters', () => {
@@ -83,7 +79,5 @@ describe('Test Email', () => {
     test('domain is longer than 255 characters', () => {
       expect(isEmail('example@example1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890.com')).not.toBe(true)
     })
-
   })
-
 })

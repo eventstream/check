@@ -23,20 +23,20 @@
     "minify": "uglifyjs ./dist/index.js -c -m -o ./dist/index.min.js"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.3",
-    "@babel/core": "^7.8.3",
-    "@babel/node": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
     "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.0.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-jest": "^23.6.0",
-    "eslint-plugin-node": "^11.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^25.1.0",
-    "typescript": "^3.7.5",
-    "uglify-js": "^3.7.6"
+    "jest": "^26.0.0",
+    "typescript": "^3.8.3",
+    "uglify-js": "^3.9.2"
   },
   "engines": {
     "node": ">=8.x",
