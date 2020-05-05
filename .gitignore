@@ -1,6 +1,7 @@
 # check
 temp
 dist
+yarn.lock
 
 # WebStrom
 .idea/
